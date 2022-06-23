@@ -4,7 +4,6 @@ kind: Deployment
 metadata:
   labels:
     app: mongo
-  namespace: act-namespace
   name: mongo
 spec:
   replicas: 1
@@ -71,7 +70,6 @@ kind: Service
 metadata:
   labels:
     app: mongo
-  namespace: act-namespace
   name: mongo-svc
 spec:
   ports:
